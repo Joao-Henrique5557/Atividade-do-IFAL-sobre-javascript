@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscrição - ERINFO 2025</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../estilo/style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <img class="imagem-topo" src="../fotos/LOGO-ERINFO.png" alt="Imagem de topo do ERINFO">
+    <nav class="menu-navegacao">
+      <ul class="lista-links">
+        <li class="item-link"><a class="link" href="ind.html">Sobre</a></li>
+        <li class="item-link"><a class="link" href="pal.html">Palestras</a></li>
+        <li class="item-link"><a class="link" href="cursos.html">Minicursos</a></li>
+        <li class="item-link"><a class="link" href="inscri.html">Inscrição</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Formulário de Inscrição</h2>
+    <p>Preencha seus dados para participar do ERINFO 2025.</p>
+
+    <form action="processa_inscricao.php" method="post" class="form-inscricao">
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
+
+      <label for="instituicao">Instituição:</label>
+      <input type="text" id="instituicao" name="instituicao" required>
+
+      <label for="tipo">Tipo de inscrição:</label>
+      <select id="tipo" name="tipo" required>
+        <option value="estudante">Estudante</option>
+        <option value="profissional">Profissional</option>
+        <option value="professor">Professor</option>
+      </select>
+
+      <label for="minicurso">Selecione um minicurso:</label>
+      <select id="minicurso" name="minicurso" required>
+        <option value="web">Desenvolvimento Web</option>
+        <option value="python">Introdução ao Python</option>
+        <option value="banco">Banco de Dados</option>
+        <option value="figma">Design com Figma</option>
+      </select>
+
+      <label>
+        <input type="checkbox" name="newsletter"> Desejo receber novidades sobre o evento
+      </label>
+
+      <button type="submit" class="botao">Enviar Inscrição</button>
+    </form>
+
+    <section class="informacoes">
+      <h3>Informações importantes</h3>
+      <ul>
+        <li>✔ Vagas limitadas para os minicursos (ordem de inscrição).</li>
+        <li>✔ Certificados serão emitidos para todos os participantes.</li>
+      </ul>
+    
+  </main>
+
+  <footer>
+    <div class="rodape1">
+      <h1>Contamos com a sua presença!</h1>
+    </div>
+    <div class="direitos">
+      <p>&copy; 2025 ERINFO - Instituto Federal de Alagoas</p>
+      <p>Transformando ideias em inovações – Junte-se a nós no ERINFO 2025!</p>
+    </div>
+  </footer>
+</body>
+</html>
