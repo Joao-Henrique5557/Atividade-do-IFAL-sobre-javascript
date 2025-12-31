@@ -1,0 +1,49 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "SistemaDeViagensEspaciais",
+            "request": "launch",
+            "mainClass": "sistema.Principal.SistemaDeViagensEspaciais",
+            "projectName": "Gerenciamento de um Sistema de Viagens Espaciais_b6b12633"
+        },
+        {
+            "type": "java",
+            "name": "SistemaDeViagensEspaciais",
+            "request": "launch",
+            "mainClass": "SistemaDeViagensEspaciais",
+            "projectName": "Gerenciamento de um Sistema de Viagens Espaciais_b6b12633"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Gerenciamento de um Sistema de Viagens Espaciais_e7dc8e1"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Gerenciamento de um Sistema de Viagens Espaciais_d945efc5"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Turista",
+            "request": "launch",
+            "mainClass": "Turista",
+            "projectName": "Gerenciamento de um Sistema de Viagens Espaciais_d945efc5"
+        }
+    ]
+}

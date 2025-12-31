@@ -1,0 +1,78 @@
+VeiculosEspaciais {
+Atributos: nome, capacidadePassageiros e velocidadeViagem.
+metodo mostarInformacao
+}
+Sonda, Nave e Foguete inicializam essas variasveis atravéz do construtor.
+
+Bancos{
+atributo: saldo
+metodos: getSaldo, set Saldo e realizarPagamento
+}
+Nubank e Picpay vazios, pois servem de exemplo e melhora a diversidade do projeto na hora escolher uma forma de pagamento.
+
+EquipamentosEspeciais{
+atributos: preco e nivelUtilidade
+metodos: getPreco para a classe principal obter o preço do objeto
+}
+Traje e Capacete inicializam essas variasveis atravéz do construtor.
+
+Turistas{
+metodos: saudacao e necessidade;
+} 
+Robo e Humano reenscrevem os métodos com messagens pessonalizadas
+
+ViagensEspaciais{
+Atributos: destino, duracao, preco, numDias, numServicos, veiculo, nivelUtilidadeEquipamento,  e equipamento.
+metodos: setEquipamento (inicializa a variavel com um objeto), calcularPreco
+}
+ViagemExploraçao e Luxo inicializam o atributo nivelUtilidadeEquipamento
+
+Interface {
+metodos como linha, meioLinha, e de pergunta e inicialização de variaveis de classes para auxiliar a classe principal, dimuindo assim, espaço desnecessario na classe Principal
+}
+
+SistemaDeViagensEspaciais{
+metodo: main
+}
+
+Encapsulamento{
+privado: saldo
+
+protegidos: nome, capacidadePassageiros e velocidadeViagem, preco, nivelUtilidade, destino, duracao, preco, numDias, numServicos, veiculo, nivelUtilidadeEquipamento,  e equipamento.
+}
+
+Como os dados sensíveis (como o saldo de uma conta de turista, por exemplo) devem ser acessados ou alterados?
+dados sensiveis devem ser alterados apenas dentro do proprio pacote do banco. pois o sistema de viagem não pode alterar esses dados. e devem ser acessados normalmente, pois é de fins de visualização.
+
+Como a herança pode ser aplicada para diferentes tipos de veículos espaciais (naves, foguetes, sondas)?
+informações da classe Pai, como as características de um veiculo, são inicializados dentro das classes filhas, assim que o construtor das mesmas, seja chamado após instanciar um tipo de veiculo.
+
+Como você aplicaria herança para os turistas (humanos e robôs) que têm comportamentos diferentes?
+Eu colocaria atributos na classe Turista, que se inicializem nas subclasses Humanos ou Robos, e um metodo de informações do turista, que diria suas informões mais relevantes.
+
+Ou usaria metodos abstratos na classe Turista, para que qualquer tipo de Turista, seja mostrado suas informações de seu tipo, como necessidades, falas, ou qualquer coisa que separaria um tipo de turista de outro, sem se importar com informações especificas. Desta forma, o sistema poderia trabalhar com informações mais relevantes ao decorrer e finalização da viagem, sem se perocupar com historicos de clientes, apenas usando um id ou passagem com prazo de validação.
+
+4.1 Como você usaria interfaces para garantir que certos métodos sejam implementados em classes específicas (como a interface Pagamento que todas as formas de pagamento precisam implementar)?
+eu usaria uma interface de info, para mostrar informações de equipamentos, veiculos, pessoas, etc..
+
+4.2  Quais métodos as classes Viagem e Turista precisam implementar para garantir que o sistema funcione corretamente?
+Viagem{
+calcularPreco
+}
+
+Turista{
+mostrarInformacoes
+}
+
+5.2  Quais métodos você esperaria que fossem implementados nas subclasses (como em ViagemExploracao ou ViagemLuxo)?
+utilizaria o metodo info da interface com os atributos da classe ViagemEspacial(já inicializados) para criar uma saida personalizada para vada tipo de pacote.
+
+6.1  Descreva como diferentes objetos interagem no sistema. Por exemplo, como a classe Turista interage com a classe Pacote ou VeículoEspacial?
+A classe principal chama o metodo realizar o pagamento quando tiver saldo disponivel, seja de qualquer tipo de banco.
+A classe principal chama o metodo mostrarInformacao de qualquer tipo de veiculo
+A classe principal fornece algumas informações à atributos de outras classes de acordo com o que o turista escreve, como destino, veiculo etc.
+
+6.2  Como o objeto Turista vai fazer a compra do pacote e qual o comportamento do veículo? Como o sistema vai calcular o preço da viagem de acordo com o tipo de turista e o tipo de veículo?
+o turista faz o pedido de calcular o preço total do pacote, e depois e registrado e processado em algum banco.
+o comportamento é mostrar informações.
+o sistema utiliza de objetos para verificar preços e tipos, assim, toma medidas sobre adicionar ao preço do pacote caso uma condição seja verdadeira. Ex. se a resposta do veiculo seja nave, incrementar 300 ao preço do pacote, 300 é uma variavel de veiculo, e significa a sua taxa de inclusão.

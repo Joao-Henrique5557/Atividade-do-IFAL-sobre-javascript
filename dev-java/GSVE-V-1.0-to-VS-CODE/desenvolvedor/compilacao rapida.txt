@@ -1,0 +1,14 @@
+gerar uma lista com o caminho de todos os arquivos .java no projeto:
+	Get-ChildItem -Recurse -Filter *.java | ForEach-Object { $_.FullName } > lista.txt
+
+compilar todos os arquivos .java em uma pasta bin 24:
+	javac -d "bin 24" (Get-Content lista.txt)
+(tire a lista.txt da pasta desenvolvedor para poder compilar);
+
+executar:
+	java -cp "bin 24" sistema.Principal.SistemaDeViagensEspaciais
+
+compilar todos os arquivos .java em uma pasta bin 17:
+	javac --release 17 -d "bin 17" @(Get-Content lista.txt)
+executar:
+	java -cp "bin 17" sistema.Principal.SistemaDeViagensEspaciais
