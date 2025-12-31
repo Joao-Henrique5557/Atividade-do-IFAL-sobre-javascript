@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3</title>
+</head>
+<body>
+    <h1>Questão 3</h1>
+    <ul>
+        <a href="Q1.html">Q1</a>
+        <a href="Q2.html">Q2</a>
+        <a href="Q3.html">Q3</a>
+    </ul>
+
+    <script>
+    let soma = 0;
+
+    while (true) {
+        let numero = parseInt(prompt("Digite um número (0 para encerrar):"));
+        if (numero === 0) break;
+
+        if (numero < 0) {
+            soma += numero;
+        }
+    }
+
+    console.log(`A soma dos números negativos é: ${soma}`);
+</script>
+
+</body>
+</html>

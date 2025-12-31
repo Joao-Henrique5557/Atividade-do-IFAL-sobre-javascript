@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1 JS</title>
+</head>
+<body>
+    <script>
+        // Questão 1
+        let valor1 = prompt("Qual é o valor 1");
+        let valor2 = prompt("Qual é o valor 2");
+        if (valor1 > valor2) {
+            alert(valor1);
+        } else {
+            alert(valor2);
+        }
+
+        // Questão 2
+        let anoDeNascimento = prompt("Qual é o seu ano de nascimento?");
+        if (anoDeNascimento <= 2009) {
+            alert("Você poderá votar!");
+        } else {
+            alert("Você não poderá votar!");
+        }
+
+        // Questão 3
+        let senhaDigitada = prompt("Qual é a sua senha?");
+        const senha = "1234";
+        if (senhaDigitada == senha) {
+            alert("ACESSO PERMITIDO");
+        } else {
+            alert("ACESSO NEGADO");
+        }
+
+        // Questão 4
+        let quantMacas = prompt("Qual é a quantidade de maças compradas?");
+        let precoMaca;
+        if (quantMacas < 12) {
+            precoMaca = 0.30;
+        } else {
+            precoMaca = 0.25;
+        }
+        alert("Total da compra é: "+ quantMacas * precoMaca);
+
+        // Questão 5
+        let num1 = prompt("Qual o primeiro valor?");
+        let num2 = prompt("Qual o segundo valor?");
+        let num3 = prompt("Qual o terceiro valor?");
+
+        if ((num1 < num2) & (num1 < num2)) {
+            alert(num1);
+            if (num2 < num3) {
+                alert(num2)
+                alert(num3);
+            } else {
+                alert(num3);
+                alert(num2);
+            }
+        } else if ((num2 < num1) & (num2 < num3)){
+            alert(num2);
+            if (num1 < num3) {
+                alert(num1)
+                alert(num3);
+            } else {
+                alert(num3);
+                alert(num1);
+            }
+        } else if((num3 < num1) & (num3 < num2)){
+            alert(num3);
+            if (num1 < num2) {
+                alert(num1)
+                alert(num2);
+            } else {
+                alert(num2);
+                alert(num1);
+            }
+        }
+    </script>
+</body>
+</html>

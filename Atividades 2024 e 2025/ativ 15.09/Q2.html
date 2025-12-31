@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2</title>
+</head>
+<body>
+    <h1>Questão 2</h1>
+    <ul>
+        <a href="Q1.html">Q1</a>
+        <a href="Q2.html">Q2</a>
+        <a href="Q3.html">Q3</a>
+    </ul>
+
+    <script>
+        let totalVotos = [0, 0, 0, 0, 0, 0]; // [cand1, cand2, cand3, cand4, nulo, branco]
+
+        while (true) {
+            let voto = parseInt(prompt("Digite seu voto (1-4 candidatos, 5 nulo, 6 branco, 0 para encerrar):"));
+
+            if (voto === 0) break;
+            else if (voto >= 1 && voto <= 6) {
+                totalVotos[voto - 1]++;
+            } else {
+                console.log("Voto inválido");
+            }
+        }
+
+        console.log(`Total de votos para cad1: ${totalVotos[0]}`);
+        console.log(`Total de votos para cad2: ${totalVotos[1]}`);
+        console.log(`Total de votos para cad3: ${totalVotos[2]}`);
+        console.log(`Total de votos para cad4: ${totalVotos[3]}`);
+        console.log(`Total de votos nulos: ${totalVotos[4]}`);
+        console.log(`Total de votos em branco: ${totalVotos[5]}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de Inscrição</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>FORMULÁRIO DE INSCRIÇÃO</h1>
+            <h4>35 ANOS DE ECA: JUSTIÇA SOCIAL E AMBIENTAL</h4>
+            <h6>julho/2025 - Brasília/DF</h6>
+        </div>
+    </header>
+
+
+    <form action="index.html" method="post">
+        <div class="secao">
+<h1>Semana Comemorativa dos 35 Anos do Estatuto da Criança e do Adolescente - ECA</h1><br>
+<p>O evento de 35 anos do Estatuto da Criança e do Adolescente (ECA) reunirá, em Brasília, governo, sociedade civil, parlamentares e representantes dos órgãos do sistema de garantia de direitos de crianças e adolescentes para debater o tema: Justiça Social e Ambiental.</p>
+<br> <p>Inscreva-se, preenchendo e enviando este formulário, e participe! </p> <br> <p>Seja parte deste momento de fortalecimento da promoção, proteção e defesa dos direitos humanos de crianças e adolescentes do Brasil.</p>
+<br> <p>Onde: Brasília/DF</p> <br> <p>Quando: De 13 a 17 de julho de 2025. As inscrições são válidas para as atividades públicas. </p>
+<br> <p>- 13/07 (Domingo) Encontro do Comitê de Participação de Adolescentes (CPA) - atividade fechada
+</p> <br> <p>-  14/07 (Segunda-feira) Encontro do Comitê de Participação de Adolescentes (CPA) - atividade fechada</p> <br>
+<p>- 15/07 (Terça-feira) - Manhã (8h00 às 12h00) - atividade pública</p> <br> <p>· Credenciamento (8h – 8h30)</p> <br> <p>· Café de abertura (8h30 - 9h)</p> <br> <p>· Mesa de Abertura: 35 anos do ECA (9h – 12h);</p>
+<br> <p>Local: Espaço Cultural Anatel Setor de Autarquias Sul Q. 6 - Brasília, DF, 70655-775</p><br> <p>- 15/07 (Terça-feira) - Tarde (14h00 às 18h00) </p> <br> <p> · Painel: Racismo Ambiental, Justiça Climática, Infâncias e Adolescências (14h00 – 17h)</p>
+<br> <p>Local: Espaço Cultural Anatel Setor de Autarquias Sul Q. 6 - Brasília, DF, 70655-775</p> <br> <p>- 15/07 (Terça-feira) - Tarde (17h30 às 20h30) - Reunião com parlamentares - reunião fechada </p> <br> <p>- 16/07 (Quarta-feira) - Manhã (9h – 12h) - atividade pública;</p>
+<br> <p>• Aula Magna - Especialização: Direitos de Crianças e Adolescentes Indígenas, Quilombolas e de Comunidades Tradicionais no Contexto das Mudanças Climáticas</p><br><p>Local: Espaço Cultural Anatel Setor de Autarquias Sul Q. 6 - Brasília, DF, 70655-775</p><br><p>- 16/07 (Quarta-feira) - Noite (19h) -  atividade pública </p><br><p>· Cine-debate: Filme Manas</p><br><p>Local: Cine Brasília Asa Sul EQS 106/107 - Brasília, DF, 70345-400</p> <br><p>17/07 (Quinta-feira) - Manhã (9h – 1h) Assembleia Ampliada CONANDA</p>
+        </div>
+
+        <div class="secao">
+            <label for="nome">Nome completo: </label>
+            <input type="text" placeholder="seu nome" name="nome" required>
+        </div>
+
+        <div class="secao">
+            <label for="nomeSocial">Nome social: </label>
+            <input type="text" placeholder="seu nome social" name="nomeSocial">
+        </div>
+
+        <div class="secao">
+            <label for="atividades">De qual(is) atividade(s) você pretende participar?</label>
+            <p><input type="checkbox" name="atividades" value="Mesa de Abertura: 35 anos do ECA"> Mesa de Abertura: 35 anos do ECA</p>
+            <p><input type="checkbox" name="atividades" value="Painel: Racismo Ambiental, Justiça Climática, Infâncias e Adolescências"> Painel: Racismo Ambiental, Justiça Climática, Infâncias e Adolescências</p>
+        </div>
+
+        <div class="secao">
+            <p>Data de Nascimento: <input type="date" name="dataNascimento" required></p>
+        </div>
+
+        <div class="secao">
+            <label for="email">E-mail: </label>
+            <input type="email" placeholder="seu e-mail" name="email" required>
+        </div>
+
+        <div class="secao">
+            <label for="telefone">Telefone: </label>
+            <input type="tel" placeholder="seu telefone" name="telefone" required>
+        </div>
+
+        <div class="secao">
+            <p>Qual é o seu sexo? </p>
+            <input type="radio" name="genero" value="masculino" id="masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="genero" value="feminino" id="feminino"> 
+            <label for="feminino">Feminino</label>
+            <input type="radio" name="genero" value="outros" id="Outros">
+            <label for="outro">Outro</label>
+        </div>
+
+        <div class="secao" style="justify-content: center; display: flex;">
+            <input type="submit" value="Enviar Inscrição" class="btn">
+            <input type="reset" value="Limpar Formulário" class="btn">
+        </div>
+    </form> 
+</body>
+</html>

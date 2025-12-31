@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1</title>
+</head>
+<body>
+    <h1>Questão 1</h1>
+    <ul>
+        <a href="Q1.html">Q1</a>
+        <a href="Q2.html">Q2</a>
+        <a href="Q3.html">Q3</a>
+    </ul>
+    <script>
+        let totalSalario = 0;
+        let totalFilhos = 0;
+        let maiorSalario = 0;
+        let qtdHabitantes = 0;
+        let qtdSalarioAte100 = 0;
+
+        while (true) {
+            let salario = parseFloat(prompt("Digite o salário (ou valor negativo para sair):"));
+            if (salario < 0) break;
+
+            let filhos = parseInt(prompt("Digite a quantidade de filhos:"));
+
+            totalSalario += salario;
+            totalFilhos += filhos;
+            qtdHabitantes++;
+
+            if (salario > maiorSalario) {
+                maiorSalario = salario;
+            }
+            if (salario <= 100) {
+                qtdSalarioAte100++;
+            }
+        }
+
+        let mediaSalario = totalSalario / qtdHabitantes;
+        let mediaFilhos = totalFilhos / qtdHabitantes;
+        let percentualAte100 = (qtdSalarioAte100 / qtdHabitantes) * 100;
+
+        console.log(`Média salarial: ${mediaSalario}`);
+        console.log(`Média de filhos: ${mediaFilhos}`);
+        console.log(`Maior salário: ${maiorSalario}`);
+        console.log(`Percentual de salários até 100: ${percentualAte100}%`);
+    </script>
+</body>
+</html>
