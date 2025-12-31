@@ -1,0 +1,17 @@
+1. Desacoplamento (Open/Closed Principle - OCP)
+Com Construtores: O código cliente (Main.java) estaria acoplado às classes concretas. Se você quisesse criar um Uno, precisaria de new Uno(). Para criar um Fiat, precisaria de new Fiat().
+
+Com Factory Method: O código cliente não sabe qual classe concreta está sendo instanciada. Ele pede um Carro para um CarroFactore.
+
+Benefício: Você pode adicionar novos tipos de carros (ex: Jeep, Palio) ao sistema sem modificar o código cliente (Main.java). Basta criar a nova classe Jeep e a nova fábrica JeepFactore. O código está aberto para extensão, mas fechado para modificação (Princípio Aberto/Fechado).
+
+2. Lógica de Criação Encapsulada
+O Factory Method encapsula a lógica de criação. Se a criação de um Carro fosse mais complexa (ex: requeresse várias etapas de inicialização, leitura de arquivos de configuração, etc.), toda essa complexidade estaria contida dentro do método criarCarro() da fábrica, mantendo o código cliente limpo e simples.
+
+3. Flexibilidade na Decisão de Criação
+O método de fábrica pode decidir em tempo de execução qual classe concreta instanciar. Embora sua implementação não mostre isso explicitamente (você usa fábricas dedicadas), é comum ter uma única fábrica que recebe um parâmetro (ex: nome do modelo) e decide qual classe instanciar com base nesse parâmetro.
+
+4. Permite Retornar Tipos Abstratos
+Você pode programar para uma interface (Carro) e não para uma implementação (Uno). Isso facilita a substituição de implementações.
+
+Em resumo, o Factory Method delega a responsabilidade de criação para classes especializadas (as Fábricas), permitindo que seu código cliente lide com objetos em um nível mais abstrato, o que o torna muito mais adaptável a mudanças futuras.
