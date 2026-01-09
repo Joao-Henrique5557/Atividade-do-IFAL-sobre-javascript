@@ -1,6 +1,8 @@
 let contatos = [];
 const lista_contatos_div = document.querySelector('.lista_contatos');
 
+// Funções para adicionar, excluir e atualizar contatos
+
 const adicionar_contato = () => {
     const nome = prompt('Qual é o nome?');
     const telefone = prompt('Qual é o telefone?');
