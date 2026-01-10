@@ -22,22 +22,26 @@ button {
   font-size: 26px;
 }
 
+body{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
 .lista_contatos {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   width: 100%;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 10px 100px 10px 100px;
 }
 
 .contato{
-  display: flex;
-  flex-direction:row;
-  justify-content: space-between;
-  width: 100%;
-  border-radius: 40px;
-  background-color: #E9E9E9;
-  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0 10px;
+  background-color: rgb(30, 81, 177);
+  padding: 20px;
+  color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0);
 }
