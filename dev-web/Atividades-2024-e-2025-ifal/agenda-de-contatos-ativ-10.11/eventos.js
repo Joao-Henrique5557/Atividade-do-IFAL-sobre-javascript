@@ -37,13 +37,23 @@ const excluir_contato = () => {
     let achou_contato = false;
 
     while (achou_contato == false){
-        if (contatos[i].id_contato == contatos.id[id_contato]){
-            contatos.id[id_contato] = null;
+        if (contatos[i].id === id_contato){
+            contatos.splice(i, 1)
+
+            organizar_ids()
             
-            mostrar_contatos();
-            achou_contato = true;
-        } else{
-            i += 1
+            mostrar_contatos()
+            achou_contato = true
+        }else{
+            i++
+        }
+    }
+}
+
+const organizar_ids = () => {
+    for (let i = 0; i < contatos.length; i++){
+        if (contatos[i].id != i + 1){ // se tal id  de indice tal for diferente do mesmo, mudar seu id para o respectivo indice 
+            contatos[i].id = i + 1
         }
     }
 }
