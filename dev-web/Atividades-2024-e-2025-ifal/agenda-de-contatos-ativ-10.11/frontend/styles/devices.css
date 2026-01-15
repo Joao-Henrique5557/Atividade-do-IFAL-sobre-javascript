@@ -1,0 +1,17 @@
+@media (min-width: 350px) {
+    button {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 400px) {
+    button {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 450px) {
+    button {
+        font-size: 40px;
+    }
+}

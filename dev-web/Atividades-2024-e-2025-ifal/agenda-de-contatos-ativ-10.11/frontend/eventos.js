@@ -1,5 +1,5 @@
 let contatos = [];
-const lista_contatos_div = document.querySelector('.lista_contatos');
+const lista_contatos_div = document.querySelector('.lista_contatos-div');
 
 const adicionar_contato = () => {
     const nome = prompt("Qual é o seu nome?")
@@ -20,7 +20,7 @@ const mostrar_contatos = () => {
     lista_contatos_div.innerHTML = ''
     for (contato of contatos){
         lista_contatos_div.innerHTML += `
-        <div class="contato" id="contato-${contato.id}">
+        <div class="contato-componente" id="contato-${contato.id}">
             <p>${contato.nome}</p>
             <p>Email: ${contato.email}</p>
             <p>Numero: ${contato.numero}</p>
